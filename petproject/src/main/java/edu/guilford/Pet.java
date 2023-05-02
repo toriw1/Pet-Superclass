@@ -1,5 +1,7 @@
 package edu.guilford;
 
+import java.text.DecimalFormat;
+
 public abstract class Pet {
 
     // attributes
@@ -12,6 +14,8 @@ public abstract class Pet {
     protected static String breed;
     protected static String owner;
     protected static String favoriteToy;
+
+    DecimalFormat df = new DecimalFormat("#0.00");
 
     // constructor 
     public Pet(String name, int age, String species, double weight, String gender, String color, String breed, String owner, String favoriteToy) {
@@ -99,16 +103,17 @@ public abstract class Pet {
         Pet.favoriteToy = newFavoriteToy;
     }
 
-
-
     // methods
     public abstract void play();
 
     public abstract String getSound();
 
-    public String speak() {
-        return "I am a " + Pet.species + " and I say " + this.getSound();
+    // toString method
+    public String toString() {
+        return ("Name: " + name + ", Age: " + age + ", Species: " + species + ", Weight: " + df.format(weight) + ", Gender: " + gender + 
+        ", Color: " + color + ", Breed: " + breed + ", Owner: " + owner + ", Favorite Toy: " + favoriteToy);
     }
+
 
 }
 

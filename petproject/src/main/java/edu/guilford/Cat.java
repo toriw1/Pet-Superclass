@@ -7,7 +7,8 @@ public class Cat extends Pet {
     private String furType;
 
     // constructor for Cat
-    public Cat(String furPattern, String furType) {
+    public Cat(String furPattern, String furType, String name, int age, String species, 
+    double weight, String gender, String color, String breed, String owner, String favoriteToy) {
         super(name, age, species, weight, gender, color, breed, owner, favoriteToy);
         this.furType = furPattern;
         this.furType = furType;
@@ -27,6 +28,12 @@ public class Cat extends Pet {
     // implement getSound method from Pet
     public String getSound() {
         return "Meow!";
+    }
+
+    // use inheritance and call the toString method from Pet
+    @Override
+    public String toString() {
+        return super.toString() + "\nFur Pattern: " + furPattern + "\nFur Type: " + furType + "\n";
     }
 
 }

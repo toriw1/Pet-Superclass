@@ -1,5 +1,7 @@
 package edu.guilford;
 
+import java.text.DecimalFormat;
+
 // create a Dog class that extends Pet
 public class Dog extends Pet {
 
@@ -8,8 +10,11 @@ public class Dog extends Pet {
     private String tailType;
     private String earType;
 
+    DecimalFormat df = new DecimalFormat("#0.00");
+
     // constructor for Dog
-    public Dog(String furType, String tailType, String earType) {
+    public Dog(String furType, String tailType, String earType, String name, int age, String species, 
+    double weight, String gender, String color, String breed, String owner, String favoriteToy) {
         super(name, age, species, weight, gender, color, breed, owner, favoriteToy);
         this.furType = furType;
         this.tailType = tailType;
@@ -31,4 +36,12 @@ public class Dog extends Pet {
     public String getSound() {
         return "Woof!";
     }
+
+    // use inheritance and call the toString method from Pet
+    @Override
+    public String toString() {
+        return super.toString() + "\nFur Type: " + furType + "\nTail Type: " + tailType + "\nEar Type: " + earType + "\n";
+    }
+
+
 }

@@ -8,7 +8,8 @@ public class Fish extends Pet {
     private double length;
 
     // constructor for Fish
-    public Fish(String finType, String waterType, double length) {
+    public Fish(String finType, String waterType, double length, String name, int age, String species, 
+    double weight, String gender, String color, String breed, String owner, String favoriteToy) {
         super(name, age, species, weight, gender, color, breed, owner, favoriteToy);
         this.finType = finType;
         this.waterType = waterType;
@@ -29,6 +30,12 @@ public class Fish extends Pet {
     // implement getSound method from Pet
     public String getSound() {
         return "Blub!";
+    }
+
+    // use inheritance and call the toString method from Pet
+    @Override
+    public String toString() {
+        return super.toString() + "\nFin Type: " + finType + "\nWater Type: " + waterType + "\nLength: " + length + "\n";
     }
 
 }
