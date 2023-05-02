@@ -54,11 +54,11 @@ public class PetMain
         // call the compareTo method from Pet
         Arrays.sort(pets);
         // print statement for output formatting
-        System.out.println("Pets sorted by age: ");
+        System.out.println("Pets sorted by weight: ");
         // print the pets array
         for (Pet pet : pets) {
-            if (pet.getAge() > 0) {
-                System.out.println(pet.getName() + " is " + pet.getAge() + " years old.");
+            if (pet.getWeight() > 0) {
+                System.out.println(pet.getName() + " is " + pet.getWeight() + " pounds.");
             } else {
                 System.out.println("No pets found.");
             }

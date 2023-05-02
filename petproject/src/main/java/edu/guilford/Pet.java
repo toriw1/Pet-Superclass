@@ -115,8 +115,8 @@ public abstract class Pet {
     }
 
     // implement the compareTo method from Comparable
-    public int compareTo(Pet p) {
-        return Integer.compare(Pet.age, p.age);
+    public double compareTo(Pet p) {
+        return Double.compare(Pet.weight, p.weight);
     }
 
 }
