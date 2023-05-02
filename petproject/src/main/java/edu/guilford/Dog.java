@@ -43,5 +43,4 @@ public class Dog extends Pet {
         return super.toString() + "\nFur Type: " + furType + "\nTail Type: " + tailType + "\nEar Type: " + earType + "\n";
     }
 
-
 }

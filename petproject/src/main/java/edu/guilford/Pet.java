@@ -114,6 +114,10 @@ public abstract class Pet {
         ", Color: " + color + ", Breed: " + breed + ", Owner: " + owner + ", Favorite Toy: " + favoriteToy);
     }
 
+    // implement the compareTo method from Comparable
+    public int compareTo(Pet p) {
+        return Integer.compare(Pet.age, p.age);
+    }
 
 }
 

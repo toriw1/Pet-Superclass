@@ -1,5 +1,7 @@
 package edu.guilford;
 
+import java.util.Arrays;
+
 public class PetMain 
 {
     public static void main( String[] args )
@@ -45,7 +47,23 @@ public class PetMain
         myFish.play();
         // call the getSound method from Fish
         System.out.println(myFish.getSound() + "\n");
-        
+
+        // put the pet objects into an array
+        Pet[] pets = {myDog, myDog2, myDog3, myCat, myCat2, myCat3, myFish, myFish2, myFish3};
+
+        // call the compareTo method from Pet
+        Arrays.sort(pets);
+        // print statement for output formatting
+        System.out.println("Pets sorted by age: ");
+        // print the pets array
+        for (Pet pet : pets) {
+            if (pet.getAge() > 0) {
+                System.out.println(pet.getName() + " is " + pet.getAge() + " years old.");
+            } else {
+                System.out.println("No pets found.");
+            }
+        }
+
     }
 
 }
