@@ -3,15 +3,15 @@ package edu.guilford;
 public class Fish extends Pet {
 
     // attributes for Fish
-    private String finType;
+    private int finAmount;
     private String waterType;
     private double length;
 
     // constructor for Fish
-    public Fish(String finType, String waterType, double length, String name, int age, String species, 
+    public Fish(int finAmount, String waterType, double length, String name, int age, String species, 
     double weight, String gender, String color, String breed, String owner, String favoriteToy) {
         super(name, age, species, weight, gender, color, breed, owner, favoriteToy);
-        this.finType = finType;
+        this.finAmount = finAmount;
         this.waterType = waterType;
         this.length = length;
     }
@@ -35,7 +35,7 @@ public class Fish extends Pet {
     // use inheritance and call the toString method from Pet
     @Override
     public String toString() {
-        return super.toString() + "\nFin Type: " + finType + "\nWater Type: " + waterType + "\nLength: " + length + "\n";
+        return super.toString() + "\nFin Amount: " + finAmount + "\nWater Type: " + waterType + "\nLength: " + length + " inches" + "\n";
     }
 
 }

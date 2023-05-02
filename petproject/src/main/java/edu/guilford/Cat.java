@@ -10,7 +10,7 @@ public class Cat extends Pet {
     public Cat(String furPattern, String furType, String name, int age, String species, 
     double weight, String gender, String color, String breed, String owner, String favoriteToy) {
         super(name, age, species, weight, gender, color, breed, owner, favoriteToy);
-        this.furType = furPattern;
+        this.furPattern = furPattern;
         this.furType = furType;
     }
 
