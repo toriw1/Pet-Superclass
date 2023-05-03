@@ -1,0 +1,64 @@
+Dog Objects: 
+Dog 1: Name: Daisy, Age: 3, Species: Dog, Weight: 2.80, Gender: Female, Color: Black, Breed: Yorkie, Owner: Tori, Favorite Toy: stuffed duck
+Fur Type: long
+Tail Type: short
+Ear Type: pointed
+
+Dog 2: Name: Sissy, Age: 16, Species: Dog, Weight: 15.00, Gender: Female, Color: White, Breed: Jack Russell, Owner: Ryan, Favorite Toy: plush snake
+Fur Type: short
+Tail Type: short
+Ear Type: folded
+
+Dog 3: Name: Molly, Age: 6, Species: Dog, Weight: 16.30, Gender: Female, Color: Brown, Breed: Beagle, Owner: Jake, Favorite Toy: ball
+Fur Type: short
+Tail Type: long
+Ear Type: floppy
+
+My dog is playing fetch with their ball.
+Woof!
+
+Cat Objects:
+Cat 1: Name: Ginger, Age: 9, Species: Cat, Weight: 10.00, Gender: Male, Color: Orange, Breed: Bengal, Owner: Betty, Favorite Toy: tree
+Fur Pattern: tabby
+Fur Type: short
+
+Cat 2: Name: Caramel, Age: 4, Species: Cat, Weight: 8.00, Gender: Female, Color: White, Breed: Persian, Owner: Jane, Favorite Toy: squeaky rat
+Fur Pattern: calico
+Fur Type: long
+
+Cat 3: Name: Merlin, Age: 6, Species: Cat, Weight: 12.00, Gender: Male, Color: Grey, Breed: Siamese, Owner: Tom, Favorite Toy: feather stick
+Fur Pattern: solid
+Fur Type: short
+
+My cat is climbing their tree.
+Meow!
+
+Fish Objects:
+Fish 1: Name: Goldie, Age: 1, Species: Fish, Weight: 0.50, Gender: Female, Color: Gold, Breed: Goldfish, Owner: Sally, Favorite Toy: ring
+Fin Amount: 5
+Water Type: fresh
+Length: 1.7 inches
+
+Fish 2: Name: Spike, Age: 2, Species: Fish, Weight: 0.65, Gender: Male, Color: Red, Breed: Betta, Owner: Xander, Favorite Toy: plastic plant
+Fin Amount: 7
+Water Type: fresh
+Length: 2.5 inches
+
+Fish 3: Name: Gil, Age: 1, Species: Fish, Weight: 0.20, Gender: Male, Color: White, Breed: Guppy, Owner: Zoe, Favorite Toy: castle
+Fin Amount: 3
+Water Type: fresh
+Length: 1.5 inches
+
+My fish is playing with their ring.
+Blub!
+
+Pets sorted by weight:
+Gil is 0.2 pounds.
+Goldie is 0.5 pounds.
+Spike is 0.65 pounds.
+Daisy is 2.8 pounds.
+Caramel is 8.0 pounds.
+Ginger is 10.0 pounds.
+Merlin is 12.0 pounds.
+Sissy is 15.0 pounds.
+Molly is 16.3 pounds.

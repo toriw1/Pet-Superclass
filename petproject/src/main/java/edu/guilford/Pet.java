@@ -2,105 +2,106 @@ package edu.guilford;
 
 import java.text.DecimalFormat;
 
-public abstract class Pet {
+public abstract class Pet implements Comparable<Pet> {
 
     // attributes
-    protected static String name;
-    protected static int age;
-    protected static String species;
-    protected static double weight;
-    protected static String gender;
-    protected static String color;
-    protected static String breed;
-    protected static String owner;
-    protected static String favoriteToy;
+    protected String name;
+    protected int age;
+    protected String species;
+    protected double weight;
+    protected String gender;
+    protected String color;
+    protected String breed;
+    protected String owner;
+    protected String favoriteToy;
 
     DecimalFormat df = new DecimalFormat("#0.00");
 
-    // constructor 
-    public Pet(String name, int age, String species, double weight, String gender, String color, String breed, String owner, String favoriteToy) {
-        Pet.name = name;
-        Pet.age = age;
-        Pet.species = species;
-        Pet.weight = weight;
-        Pet.gender = gender;
-        Pet.color = color;
-        Pet.breed = breed;
-        Pet.owner = owner;
-        Pet.favoriteToy = favoriteToy;
+    // constructor
+    public Pet(String name, int age, String species, double weight, String gender, String color, String breed,
+            String owner, String favoriteToy) {
+        this.name = name;
+        this.age = age;
+        this.species = species;
+        this.weight = weight;
+        this.gender = gender;
+        this.color = color;
+        this.breed = breed;
+        this.owner = owner;
+        this.favoriteToy = favoriteToy;
     }
 
     // getters and setters
     public String getName() {
-        return Pet.name;
+        return this.name;
     }
 
     public void setName(String newName) {
-        Pet.name = newName;
+        this.name = newName;
     }
 
     public int getAge() {
-        return Pet.age;
+        return this.age;
     }
 
     public void setAge(int newAge) {
-        Pet.age = newAge;
+        this.age = newAge;
     }
 
     public String getSpecies() {
-        return Pet.species;
+        return this.species;
     }
 
     public void setSpecies(String newSpecies) {
-        Pet.species = newSpecies;
+        this.species = newSpecies;
     }
 
     public double getWeight() {
-        return Pet.weight;
+        return this.weight;
     }
 
     public void setWeight(double newWeight) {
-        Pet.weight = newWeight;
+        this.weight = newWeight;
     }
 
     public String getGender() {
-        return Pet.gender;
+        return this.gender;
     }
 
     public void setGender(String newGender) {
-        Pet.gender = newGender;
+        this.gender = newGender;
     }
 
     public String getColor() {
-        return Pet.color;
+        return this.color;
     }
 
     public void setColor(String newColor) {
-        Pet.color = newColor;
+        this.color = newColor;
     }
 
     public String getBreed() {
-        return Pet.breed;
+        return this.breed;
     }
 
     public void setBreed(String newBreed) {
-        Pet.breed = newBreed;
+        this.breed = newBreed;
     }
 
     public String getOwner() {
-        return Pet.owner;
+        return this.owner;
     }
 
     public void setOwner(String newOwner) {
-        Pet.owner = newOwner;
+        this.owner = newOwner;
     }
 
     public String getFavoriteToy() {
-        return Pet.favoriteToy;
+        return this.favoriteToy;
     }
 
     public void setFavoriteToy(String newFavoriteToy) {
-        Pet.favoriteToy = newFavoriteToy;
+        this.favoriteToy = newFavoriteToy;
     }
 
     // methods
@@ -110,14 +111,19 @@ public abstract class Pet {
 
     // toString method
     public String toString() {
-        return ("Name: " + name + ", Age: " + age + ", Species: " + species + ", Weight: " + df.format(weight) + ", Gender: " + gender + 
-        ", Color: " + color + ", Breed: " + breed + ", Owner: " + owner + ", Favorite Toy: " + favoriteToy);
+        return ("Name: " + name + ", Age: " + age + ", Species: " + species + ", Weight: " + df.format(weight)
+                + ", Gender: " + gender +
+                ", Color: " + color + ", Breed: " + breed + ", Owner: " + owner + ", Favorite Toy: " + favoriteToy);
     }
 
-    // implement the compareTo method from Comparable
-    public double compareTo(Pet p) {
-        return Double.compare(Pet.weight, p.weight);
+    // compareTo method for sorting by weight
+    public int compareTo(Pet other) {
+        if (this.weight < other.weight) {
+            return -1;
+        } else if (this.weight > other.weight) {
+            return 1;
+        } else {
+            return 0;
+        }
     }
-
 }
-
